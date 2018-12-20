@@ -10,5 +10,5 @@ resource "azurerm_virtual_network" "my_vnet"{
         name                            = "${var.vnet}"
         address_space                   = ["${var.vnet-cidr}"]
         location                        = "${var.location}"
-        resource_group_name             = "${azurerm_resource_group.rg.name}"
+        resource_group_name             = "${var.resource_group}"
 }
